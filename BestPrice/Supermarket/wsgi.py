@@ -8,13 +8,16 @@ https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+# Add BestPrice directory to Python path for Vercel
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Supermarket.settings')
 
 application = get_wsgi_application()
-<<<<<<< HEAD
 
 # Vercel serverless function handler
 app = application
