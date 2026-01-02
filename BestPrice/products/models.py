@@ -46,9 +46,13 @@ class Product(models.Model):
 
     class Meta:
         ordering = ('name', )
+<<<<<<< HEAD
         indexes = [
             models.Index(fields=['id', 'slug']),
         ]
+=======
+        index_together = (('id', 'slug'),)
+>>>>>>> be08d98730b581d040c432365cebcb1271a58c1f
 
     def __str__(self):
         return self.name

@@ -23,9 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!@1uqc&0&5ji8_^c+otz64bcgymk#d8xvyy5awrn$=p%q75afm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
+=======
+DEBUG = True
+
+ALLOWED_HOSTS = []
+>>>>>>> be08d98730b581d040c432365cebcb1271a58c1f
 
 
 # Application definition
@@ -131,8 +137,11 @@ STATICFILES_DIRS = (
  os.path.join(BASE_DIR, "assets"),
 )
 
+<<<<<<< HEAD
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
+=======
+>>>>>>> be08d98730b581d040c432365cebcb1271a58c1f
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")

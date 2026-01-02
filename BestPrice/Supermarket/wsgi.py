@@ -14,6 +14,9 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Supermarket.settings')
 
 application = get_wsgi_application()
+<<<<<<< HEAD
 
 # Vercel serverless function handler
 app = application
+=======
+>>>>>>> be08d98730b581d040c432365cebcb1271a58c1f
