@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "BestPrice/Supermarket/wsgi.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
-      }
+      "src": "api/index.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "BestPrice/Supermarket/wsgi.py"
+      "dest": "api/index.py"
     }
   ]
 }
